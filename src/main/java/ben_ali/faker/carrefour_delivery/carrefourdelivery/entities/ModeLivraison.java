@@ -32,6 +32,9 @@ public class ModeLivraison implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    //Note les colonnes ci-dessous normalement livraison doit être associé a une instance de type client
+    // @ManyToOne
+    // private Client client;
     @Column
     private String nomClient;
     @Column
