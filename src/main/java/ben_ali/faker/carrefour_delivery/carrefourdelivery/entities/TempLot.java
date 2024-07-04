@@ -35,4 +35,10 @@ public class TempLot {
     @Column
     private LocalTime dateFin;
 
+    private boolean reserved;
+
+    @ManyToOne // on peut specifier des options comme : fetch , targetEntity, index ,
+    // joinColumn ...
+    private ModeLivraison modeLivraison;
+
 }

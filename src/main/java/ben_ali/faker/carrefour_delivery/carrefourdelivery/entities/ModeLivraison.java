@@ -51,10 +51,4 @@ public class ModeLivraison implements Serializable {
     @Enumerated(EnumType.STRING)
     private TypeLivraison type;
 
-
-    @ManyToOne // on peut specifier des options comme : fetch , targetEntity, index ,
-    // joinColumn ...
-    private ModeLivraison modeLivraison;
-    @Column
-    private boolean reserved;
 }
